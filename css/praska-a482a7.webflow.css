@@ -1503,6 +1503,10 @@
     display: none;
   }
 
+  .swiper-wrapper.team-slider {
+    margin-left: 20px;
+  }
+
   .link-block {
     width: 120px;
   }
