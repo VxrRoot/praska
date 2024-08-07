@@ -225,7 +225,7 @@
   border-radius: 70px 100px 70px 0;
   width: 480px;
   height: 100%;
-  max-height: 512px;
+  max-height: 600px;
   position: absolute;
   top: 0;
   right: 0;
@@ -278,7 +278,7 @@
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 110px;
   padding-top: 0;
   padding-bottom: 0;
   display: flex;
@@ -743,6 +743,10 @@
   align-items: flex-start;
 }
 
+.swiper-slide {
+  transition: transform 25s linear;
+}
+
 .swiper-slide.team-slider {
   flex: none;
   width: 289px;
@@ -752,11 +756,12 @@
 .team-slider__info {
   background-color: rgba(252, 237, 198, 0.9);
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 20px;
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  /* width: 100%; */
+  padding: 30px;
   border-radius: 30px;
   color: var(--dark-blue);
   transform: translateY(100%);
@@ -1160,6 +1165,7 @@
 
 .div-block-38 {
   background-color: #fff;
+  margin-top: 40px;
   height: 240px;
   position: absolute;
   bottom: 0;
@@ -1459,6 +1465,7 @@
 
   .div-block-38 {
     height: 560px;
+    margin-top: 40px;
   }
 
   .link-block-6 {
@@ -1491,6 +1498,7 @@
 
   .div-block-38 {
     height: 400px;
+    margin-top: 40px;
   }
 }
 
@@ -1696,6 +1704,7 @@
   .div-block-38 {
     background-color: var(--white);
     height: 740px;
+    margin-top: 40px;
   }
 
   .text-block-33.firstopenhour {

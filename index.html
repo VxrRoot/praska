@@ -680,7 +680,7 @@
                 </div>
                 <div class="fade">
                   <img
-                    src="images/onkologia-3.webp"
+                    src="images/onkologia-3.png"
                     loading="lazy"
                     alt="Badanie wzroku kota"
                     class="image-5 img7"
@@ -688,7 +688,7 @@
                 </div>
                 <div class="fade">
                   <img
-                    src="images/onkologia-4.webp"
+                    src="images/onkologia-4.png"
                     loading="lazy"
                     alt="Badanie wzroku kota"
                     class="image-5 img7"
@@ -1457,10 +1457,11 @@
         slidesPerView: 4.5,
         spaceBetween: 50,
         autoplay: {
-          delay: 500,
+          delay: 2000,
           disableOnInteraction: true,
         },
-        speed: 4000,
+        speed: 500,
+        loopAdditionalSlides: 1,
         breakpoints: {
           // when window width is >= 320px
           320: {
@@ -1473,7 +1474,7 @@
             slidesPerView: 2.5,
             spaceBetween: 40,
           },
-          1000: {
+          1200: {
             slidesPerView: 3.5,
           },
           1440: {
@@ -1483,6 +1484,19 @@
             slidesPerView: 5.5,
           },
         },
+      });
+
+      // Znajdź element zawierający swiper
+      const swiperContainer = document.querySelector(".swiper.team-slider");
+
+      // Dodaj zdarzenie mouseenter, aby zatrzymać autoplay
+      swiperContainer.addEventListener("mouseenter", () => {
+        teamSlider.autoplay.stop();
+      });
+
+      // Dodaj zdarzenie mouseleave, aby wznowić autoplay
+      swiperContainer.addEventListener("mouseleave", () => {
+        teamSlider.autoplay.start();
       });
     </script>
   </body>
