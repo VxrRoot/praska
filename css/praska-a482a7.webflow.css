@@ -771,7 +771,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 34px;
 }
 
 .team-img__wrapper:hover .team-slider__info {
@@ -1517,7 +1517,6 @@
 
   .swiper-wrapper.team-slider {
     margin-left: 20px;
-    overflow: hidden !important;
   }
 
   .link-block {
