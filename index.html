@@ -568,7 +568,7 @@
                   laboratoryjne: posiewy z antybiogramem z worka spojówkowego,
                   testy PCR, biopsje, cytologie, testy alergiczne i genetyczne.
                   Zabiegi mikrochirurgiczne przeprowadzane są metodą laserową na
-                  pacjentach znieczulonych metodą wziewną. Protezowanie rogówki
+                  pacjentach znieczulonych narkozą wziewną. Protezowanie rogówki
                   z użyciem biomateriałów, operacja zaćmy, plastyka powiek,
                   implanty wewnątrzgałkowe jako alternatywa dla usunięcia oka to
                   tylko niektóre z realizowanych u nas zabiegów.
@@ -721,13 +721,13 @@
               <h2 class="text-block-8">onkologia</h2>
             </div>
             <div class="text-block-9">
-              Pacjentom onkologicznym zapewniamy kompleksowa opiekę opartą na
+              Pacjentom onkologicznym zapewniamy kompleksową opiekę opartą na
               najnowszej wiedzy.
             </div>
             <div class="text-block-11">
               Naszym standardem jest szczegółowa diagnostyka, która jest
               niezbędna do postawienia prawidłowego rozpoznania, a co za tym
-              idzie, ustalenia rokowania. Niezależnie od rodzaju nowotworu z
+              idzie, ustalenia rokowania. Niezależnie od rodzaju nowotworu, z
               którym mamy do czynienia, biopsja cienkoigłowa jest badaniem
               podstawowym. Pozwala ona określić stopień złośliwości zmiany i
               dzięki niej nasz weterynarz onkolog może dobrać najbardziej
@@ -1440,6 +1440,41 @@
 
       swiperContainer.addEventListener("mouseleave", () => {
         teamSlider.autoplay.start();
+      });
+
+      // document.addEventListener("DOMContentLoaded", function () {
+      //   const teamWrappers = document.querySelectorAll(".team-img__wrapper");
+
+      //   teamWrappers.forEach((wrapper) => {
+      //     wrapper.addEventListener("click", function () {
+      //       const info = wrapper.querySelector(".team-slider__info");
+      //       if (info.classList.contains("active")) {
+      //         info.classList.remove("active");
+      //       } else {
+      //         // Najpierw ukrywamy wszystkie inne, aby działało tylko na jednym klikniętym
+      //         document
+      //           .querySelectorAll(".team-slider__info.active")
+      //           .forEach((activeInfo) => {
+      //             activeInfo.classList.remove("active");
+      //           });
+      //         info.classList.add("active");
+      //       }
+      //     });
+      //   });
+      // });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const teamWrappers = document.querySelectorAll(".team-img__wrapper");
+
+        teamWrappers.forEach((wrapper) => {
+          wrapper.addEventListener("click", function () {
+            const info = wrapper.querySelector(".team-slider__info");
+            console.log(info);
+
+            // Przełączanie klasy 'active'
+            info.classList.toggle("active");
+          });
+        });
       });
     </script>
   </body>

@@ -1723,6 +1723,16 @@
     line-height: 37px;
     display: block;
   }
+
+  .team-img__wrapper:hover .team-slider__info {
+    transform: translateY(
+      100%
+    ); /* Zapewnia, że hover nie ma żadnego efektu na urządzeniach dotykowych */
+  }
+
+  .team-slider__info.active {
+    transform: translateY(0) !important;
+  }
 }
 
 @media screen and (min-width: 1700px) {
